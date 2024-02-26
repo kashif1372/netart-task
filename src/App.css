@@ -1,0 +1,188 @@
+.App {
+  background: linear-gradient(to bottom, white, #fff9b1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  text-align: center;
+}
+
+.header img {
+  width: 30%;
+  height: 10%;
+  margin-bottom: 2rem;
+}
+
+/* body */
+.body {
+  display: flex;
+  margin: 0 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.award {
+  width: 33.33%;
+  display: flex;
+  margin: auto 0;
+}
+
+.award img {
+  width: 100%;
+  height: 50vw;
+}
+
+.award + div {
+  width: 66.66%;
+  font-weight: 500;
+}
+
+/* tools */
+.tools {
+  padding: 1rem 1.5rem;
+}
+
+.tools p {
+  font-size: 95%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.tools img {
+  width: 80%;
+  height: 26vw;
+}
+
+.tools .img {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.tools .img + p {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ec3237;
+}
+
+.tools .img + p + p {
+  font-weight: 700;
+}
+
+p span {
+  color: #ec3237;
+}
+
+.tools .img + p + p + p {
+  font-size: 75%;
+}
+
+/* footer */
+.footer {
+  background: #ec3237;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.footer div {
+  width: 33.33%;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer div div {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.footer div:first-child div img {
+  height: 1.667rem;
+  width: 1.667rem;
+}
+
+.footer div:first-child div {
+  background: white;
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 0.067rem;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.footer span {
+  padding-left: 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 49.2em) {
+  .header img {
+    width: 66%;
+    height: 22%;
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .div {
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+  }
+
+  .tools {
+    padding: 1rem 1rem;
+  }
+
+  .tools .img + p {
+    margin-bottom: 0;
+  }
+
+  .tools img {
+    width: 100%;
+    height: 33vw;
+  }
+
+  .body {
+    flex-direction: column-reverse;
+    margin: 0 1rem;
+    padding-bottom: 0;
+  }
+  
+  .award {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .award img {
+    width: 60%;
+    height: 85vw;
+  }
+  
+  .award + div {
+    width: 100%;
+  }
+
+  .body h2 {
+    text-align: center;
+    font-size: 130%;
+  }
+
+  .body p {
+    text-align: center;
+  }
+}
